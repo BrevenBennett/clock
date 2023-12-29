@@ -1,0 +1,98 @@
+#clock {
+  background-color: lightgray;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.hour {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(0deg);
+  font-size: 14px;
+}
+
+.hand {
+  position: absolute;
+  width: 8px;
+  height: 200px;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 50%;
+  background-color: black;
+  transform-origin: bottom;
+}
+
+.hour__hand {
+  width: 4px;
+  height: 50px;
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.minute__hand {
+  width: 2px;
+  height: 125px;
+}
+
+.second__hand {
+  background-color: red;
+  width: 1px;
+  height: 130px;
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.millisecond__hand {
+  /* display: none; */
+  background-color: blue;
+  width: 1px;
+  height: 130px;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.hour:nth-of-type(1) {
+  transform: rotate(30deg);
+}
+
+.hour:nth-of-type(2) {
+  transform: rotate(60deg);
+}
+
+.hour:nth-of-type(3) {
+  transform: rotate(90deg);
+}
+
+.hour:nth-of-type(4) {
+  transform: rotate(120deg);
+}
+
+.hour:nth-of-type(6) {
+  transform: rotate(180deg);
+}
+
+.hour:nth-of-type(7) {
+  transform: rotate(210deg);
+}
+
+.hour:nth-of-type(5) {
+  transform: rotate(150deg);
+}
+
+.hour:nth-of-type(8) {
+  transform: rotate(240deg);
+}
+
+.hour:nth-of-type(9) {
+  transform: rotate(270deg);
+}
+
+.hour:nth-of-type(10) {
+  transform: rotate(300deg);
+}
+
+.hour:nth-of-type(11) {
+  transform: rotate(330deg);
+}
